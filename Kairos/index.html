@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kairos</title>
+	<link rel="icon" type="image/png" href="K.png">
+    <style>
+        :root {
+            --bg-color: #28302a;
+            --card-bg: #28302a;
+            --border-color: #AAA;
+            --text-color: #FFF;
+            --text-muted: #AAA;
+            --cta-color: #94ffd2;
+            --purple-accent: #a855f7;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            background-image: radial-gradient(circle at 50% 20%, #5a635c 0%, transparent 80%);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        h1 a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        h1 span {
+            color: var(--cta-color);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+			background-color: #964B00;
+			color: #ffffff;
+        }
+
+        .btn-cta {
+            background-color: var(--cta-color);
+            color: #0b0f19;
+        }
+
+        .btn-purple {
+            background-color: var(--purple-accent);
+            color: #ffffff;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .trailer-box {
+            background: #05070b;
+            border-radius: 8px;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 0.95px; /* handled properly below */
+            font-size: 0.95rem;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><a href="#">Kairos</a></h1>
+            <div class="btn-group">
+                <a href="download.html" class="btn btn-cta">Download Extension</a>
+                <a href="test.html" class="btn btn-purple">Test Kairos</a>
+            </div>
+        </header>
+
+        <div class="card" id="trailer">
+            <h2>Trailer / Tutorial</h2>
+            <div class="trailer-box">
+                2 lazy 2 make 1 just check the doooownload page
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>What Kairos Blocks Detection For:</h2>
+            <ul>
+                <li>Tab switching/minimizing</li>
+                <li>Window focus loss</li>
+                <li>Window resizing</li>
+                <li>Fullscreen exiting</li>
+                <li>User inactivity idle counters</li>
+                <li>Copy and paste detection</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>What's the use case?</h2>
+            <ul>
+                <p>Kairos is built to prevent the tracking of the telemetries listed above, which in theory could be used to enable someone to cheat on a browser exam that relies on the simple client-side browser API calls, that (public) schools pump millions of dollars into....Although nobody should EVER never ever cheat on their exams in a gazillion googolplexian years! Cheating is extremely bad some may even say immoral, disastrous, disheartening and or devastating!<br><br><b>(!) Kairos may break some websites.</b></p>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
